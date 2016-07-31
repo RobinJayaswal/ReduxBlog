@@ -29,4 +29,11 @@ module.exports = {
     new ExtractTextPlugin('bundle.css'),
   ],
 
+  devServer: {
+    port: 8080,
+    historyApiFallback: {
+      index: 'index.html',
+    },
+  }
+
 };

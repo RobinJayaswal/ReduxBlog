@@ -8,7 +8,7 @@ import routes from './routes';
 
 
 // entry point that just renders app
-// could be used for routing at some point
+// is now used for routing
 ReactDOM.render(
   <Router history={browserHistory} routes={routes} />
   , document.getElementById('main'));
