@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 export default function PostCard(props) {
   return (
-    <div className="post-card" >
-      <a href={`posts/${props.id}`}>{props.title}</a>
-      <span>{props.tags}</span>
-    </div>
+    <Link to={`posts/${props.postId}`}>
+      <div className="post-card" >
+        {props.title}
+        <span>{props.tags}</span>
+      </div>
+    </Link>
   );
 }

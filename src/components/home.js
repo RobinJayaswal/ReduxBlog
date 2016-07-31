@@ -19,12 +19,12 @@ class Index extends React.Component {
   render() {
     let posts = this.posts.map((post, index) => {
       return (
-        <PostCard title={post.title} postId={post.id} tags={post.tags} id={index} />
+        <PostCard title={post.title} postId={post.id} tags={post.tags} key={index} />
       );
     });
 
     return (
-      <div>
+      <div className="index">
         {posts}
       </div>
     );

@@ -9,5 +9,6 @@ export default(
     <IndexRoute component={Index} />
     {/* <Route path="posts/new" component={New} />
     <Route path="posts/:id" component={Show} /> */}
+
   </Route>
 );

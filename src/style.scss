@@ -3,4 +3,82 @@ body {
   color: rgb(10%, 10%, 10%);
   background: darken(white, 10%);
   margin: 50px;
+  background-color: #add8e6;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  border: thin solid white;
+}
+
+.new-button {
+  font-size: 18pt;
+  height: 50px;
+  width: 100px;
+  background: #add8e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.home-container {
+  color: #add8e6;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #add8e6;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.index {
+  margin-top: 50px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card {
+  background-color: white;
+  color: #add8e6;
+  height: 80px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &:hover {
+    box-shadow: 5px 5px 3px gray;
+    cursor: pointer;
+  }
 }
